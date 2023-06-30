@@ -1,25 +1,46 @@
-const form = document.getElementById('form')
+const firebaseConfig = {
+  apiKey: "AIzaSyAaTAHTsnDQc4GEYOaUGi8AbBw45kQEyyE",
+  authDomain: "laure-keir.firebaseapp.com",
+  projectId: "laure-keir",
+  storageBucket: "laure-keir.appspot.com",
+  messagingSenderId: "18033443728",
+  appId: "1:18033443728:web:d112ae0da2fe0d71642915",
+  measurementId: "G-PW15WSRQV5"
+};
 
-form.addEventListener('submit' ,function(event) {  
-    event.preventDefault();
-    const yourName = document.getElementById('Full_Name').value
-    const yourIDPassport = document.getElementById('ID/Passport_Number').value
-    const yourLocation=document.getElementById('County').value
-    const yourEmail=document.getElementById('Email_adress').value
+  firebase.initializeApp(firebaseConfig);
 
-    console.log(yourName)
-    console.log(yourID/Passport)
-    console.log(location)
-    console.log(Email) 
-    })
-    form.addEventListener('submit' ,function(event) {  
-        event.preventDefault();
-    const Devicemodel = document.getElementById('Device_Model').value
-    const brand = document.getElementById('Device_Brand').value
-    const IMEI=document.getElementById('IMEI_Number').value
+  var totalItem;
+  var maxCode;
+  var code;
+ 
+  
+  function enterdetails(event) {
+    event.preventDefault()
+  
+    var fullName= document.getElementById("fullName").value;
+    var IDPassportNumber = document.getElementById("IDPassportNumber").value;
+    var Location= document.getElementById("Location").value;
+    var Email= document.getElementById("Email").value;
+    document.getElementById("fullName").value = "";
+    document.getElementById("IDPassportNumber").value = "";
+    document.getElementById("Location").value = "";
+    document.getElementById("Email").value = "";
+   
 
-    console.log(model)
-    console.log(brand)
-    console.log(IMEI) 
-    })
+    //  store data to firebase
+  firebase.database().ref("Registrationform/ + code").set({
+    fullName: fullName,
+    IDPassportNumber: IDPassportNumber,
+    Location: Location,
+    Email:Email,
+  
+  });
 
+  
+  //document.getElementById("registration form-header").insertAdjacentHTML(
+    //"afterend",
+   
+ 
+
+  }
