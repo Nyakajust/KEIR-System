@@ -12,7 +12,7 @@ body {
     width: 100%;
 }
 
-h1 {
+/* h1 {
     font-size: 50px;
     line-height: 64px;
     color: #222;
@@ -35,7 +35,7 @@ h3 {
 
 h4 {
     font-size: 20px;
-    /*line-height: 64px;*/
+    /*line-height: 64px;
     color: #222;
 }
 
@@ -48,7 +48,7 @@ p {
     font-size: 16px;
     color: #465b52;
     margin: 15px 0 20px 0;
-}
+} */
 
 #header {
     display: flex;
@@ -71,8 +71,6 @@ img {
     margin-bottom: 10px;
     margin-left: 10px;
     border-radius: 50%;
-
-
 }
 
 /*img:hover {
