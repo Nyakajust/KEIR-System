@@ -63,7 +63,7 @@ p {
     left: 0;
 }
 
-img {
+.logo-img {
     height: 130px;
     width: 150px;
     margin-top: 10px;
@@ -73,9 +73,9 @@ img {
     border-radius: 50%;
 }
 
-/*img:hover {
+.logo-img:hover {
     transform: scale(1.5);
-}*/
+}
 
 #navbar {
     display: flex;
