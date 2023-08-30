@@ -1,8 +1,8 @@
                                                                                               
 :root{
-    --primary-color : #01a2a8;
+    --primary-color : rgb(16, 196, 112);
     --primary-dark : #AB1449;
-    --gray : #aaaaaa;
+    --black : #160909;
     --border : rgb(207, 207, 207);
 }
 
@@ -11,7 +11,14 @@
 *{
     transition: all 0.2s ease-in-out;
 }
-
+h1{
+    text-align: center;
+    font: size 10px;
+}
+p{
+    text-align:center;
+    background-color:rgb(16, 196, 112);
+}
 body{
     font-family: 'Work Sans', sans-serif;
     box-sizing : border-box;
@@ -22,7 +29,7 @@ body{
 
 
 .left-right-div-container{
-    margin-top: 6rem;
+    margin-top: 2rem;
 }
 
 
@@ -180,20 +187,20 @@ body{
 }
 
 .show-delete .showAll{
-    background-color: #06a170e0;
+    background-color: #14b82f;
     color : white;
     font-weight : bolder;
 }
 .show-delete .showAll:hover{
-    background-color: #059769;
+    background-color: #e5f5ea;
 }
 .show-delete .deleteAll{
-    background-color: #dc2626d7;
+    background-color: 2f;
     color : rgb(255, 255, 255);
     font-weight : bolder;
 }
 .show-delete .deleteAll:hover{
-    background-color: #dc2626fb;
+    background-color: #14b82f;
 }
 
 .no-task-info{
